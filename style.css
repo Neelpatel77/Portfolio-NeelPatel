@@ -1,226 +1,182 @@
-/* Custom Styles */
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f0f0f0;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header, nav ul {
-    background-color: #333;
-    color: #fff;
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
 }
 
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
 header {
-    padding: 40px 0;
+    background: #333;
+    color: white;
+    padding: 20px 0;
     text-align: center;
 }
-/* Style for the "Contact" link */
-.navbar-nav a.nav-link.contact-link {
-     color: #00ff00; /* Neon green color */
-    transition: color 0.3s; /* Smooth color transition on hover */
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
-/* Style for the hover effect and message */
-.navbar-nav a.nav-link.contact-link:hover::before {
-    content: "Need to get in touch? Fill out the form below!"; /* Improved message */
-    display: block;
-    position: absolute;
-    background-color: rgba(255, 123, 0, 0.779); /* Semi-transparent green background */
-    color: #fff; /* Text color for the message */
-    padding: 5px 10px;
-    border-radius: 5px;
-    z-index: 1; /* Ensure the message appears on top of the link */
-    white-space: nowrap;
-    transform: translateY(-100%);
-}
-
-/* Adjust the message's position to your liking */
-
-
+/* Navigation Styles */
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    background-color: #444;
+    text-align: center;
+    background: #444;
     padding: 10px 0;
 }
 
-/* Custom Styles for Header Section */
-header {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* Text color */
-    padding: 40px 0; /* Top and bottom padding */
-    text-align: center;
-}
-
-/* Style for the circular profile image */
-img.rounded-circle {
-    border-radius: 50%; /* Makes the image round */
-    border: 4px solid #fff; /* White border around the image */
-    margin-bottom: 20px; /* Spacing below the image */
-    object-fit: cover; /* Make the image fully fit within the circle */
-    width: 150px; /* Set the width of the circular image */
-    height: 150px; /* Set the height of the circular image */
-}
-
-h1.display-4 {
-    font-size: 2.5rem; /* Large font size for the name */
-    margin: 10px 0; /* Spacing around the name */
-}
-
-p.lead {
-    font-size: 1.25rem; /* Font size for the lead description */
-}
-
-p {
-    font-size: 1rem; /* Font size for contact info */
-    margin: 5px 0; /* Spacing around contact info */
-}
-
-/* Style for the social media links */
-a {
-    color: #fff; /* Link text color */
-    margin: 0 10px; /* Spacing between links */
-    text-decoration: none; /* Remove underlines from links */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
-}
-
-a:hover {
-    color: #ff6600; /* Change color on hover (orange in this case) */
-}
-
-/* Style for social media logos */
-img {
-    vertical-align: middle; /* Align logos with text vertically */
-    width: 32px; /* Set the width of the logos */
-}
-
 nav ul li {
-    margin: 0 20px;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ff6600;
+    color: #ddd;
 }
 
+/* Section Styling */
 section {
-    padding: 40px;
+    padding: 20px;
     text-align: center;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Education and Experience Section */
+#education, #experience {
+    background: #eaeaea;
     margin: 20px 0;
 }
 
-h1, h2 {
-    color: #333;
+/* Skills Section */
+#skills {
+    background: white;
 }
 
+/* Footer Styles */
 footer {
+    background: #333;
+    color: white;
     text-align: center;
-    background-color: #333;
-    color: #fff;
+    padding: 10px 0;
+}
+/* Basic Resets, Body, Smooth Scroll, Header, and Navigation styles */
+
+/* Education Section Styles */
+#education {
+    background-color: #f0f8ff;
     padding: 20px 0;
 }
 
-/* Bootstrap Overrides */
-.container {
-    max-width: 100%; /* Ensures full-width responsiveness */
-}
-
-/* Additional Custom Styles */
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.section-content {
-    font-size: 1.25rem;
-    line-height: 1.6;
-}
-
-/* Responsive Styles */
-@media (max-width: 767px) {
-    /* Adjust styles for smaller screens */
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
- 
- 
-/* Custom Styles for Experience and Skills Sections */
-#experience, #skills {
-    background-color: #f9f9f9;
-    padding: 100px 0;
-}
-
-.experience-item, .skills-item {
-    background-color: #fff;
+.education-items .education-item {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 15px;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.experience-header h3, .skills-header h3 {
-    font-size: 1.5rem;
+.education-item h3 {
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.experience-header p, .skills-header p {
-    font-size: 1rem;
-    color: #777;
+.education-item p {
+    color: #666;
+    font-size: 0.9em;
 }
 
-.experience-content p, .skills-content p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 10px;
-    line-height: 1.5;
+/* Experience Section Styles */
+#experience {
+    background-color: #eef2f3;
+    padding: 20px 0;
 }
 
-/* Hover effect */
-.experience-item:hover, .skills-item:hover {
-    background-color: #ff6600; /* Change to the color you prefer */
-    transform: translateY(-2px); /* Add a slight lift on hover for a subtle effect */
+.experience-items .experience-item {
+    /* Similar styles to education-item */
 }
 
-/* Ensure text color remains readable on hover */
-.experience-item:hover .experience-header h3, .skills-item:hover .skills-header h3 {
-    color: #fff; /* Change to a suitable text color for readability */
+/* ... Previous CSS styles ... */
+
+/* Skills Section Styles */
+#skills {
+    background-color: #fdfdfd;
+    padding: 20px 0;
 }
 
-.experience-item:hover .experience-header p, .experience-item:hover .experience-content p,
-.skills-item:hover .skills-header p, .skills-item:hover .skills-content p {
-    color: #f0f0f0; /* Change to a suitable text color for readability */
+.skills-list {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover effect for Skills Section */
-.skills-list:hover {
-    background-color: #ff6600; /* Change to the color you prefer */
-    transform: translateY(-2px); /* Add a slight lift on hover for a subtle effect */
+.skills-list h3 {
+    color: #333;
+    margin-bottom: 5px;
 }
 
-/* Ensure text color remains readable on hover */
-.skills-list:hover h3 {
-    color: #fff; /* Change to a suitable text color for readability */
+.skills-list p {
+    color: #666;
+    font-size: 0.9em;
+}
+ /* ... Previous CSS styles ... */
+
+/* Experience Section Styles */
+#experience {
+    background-color: #f0f2f7;
+    padding: 20px 0;
 }
 
-.skills-list:hover p {
-    color: #f0f0f0; /* Change to a suitable text color for readability */
+.experience-items .experience-item {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.experience-item h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.experience-item p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Responsive Design and Additional Styles */
+
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* Add more styles as needed for individual sections and elements */
